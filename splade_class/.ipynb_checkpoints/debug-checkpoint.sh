@@ -1,0 +1,5 @@
+cd lsr_package_learnable
+export WANDB_API_KEY="89144673f34dfdcbf35383f8c9040f5e7eb2fcb1"
+export HYDRA_FULL_ERROR="1"
+
+CUDA_VISIBLE_DEVICES=0 python -m lsr.train +experiment=splade_multiple_negatives_ohsumed_sens_reg training_arguments.per_device_train_batch_size=8 +training_arguments.gradient_accumulation_steps=16 training_arguments.logging_steps=50 loss.sens_reg.weight=100 loss.sens_reg.k=1000 train_dataset.train_group_size=3

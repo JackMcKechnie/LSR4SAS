@@ -1,0 +1,3 @@
+python splade_index_dataset.py --dataset ohsumed_train_non_sensitive --model_path naver/splade-cocondenser-ensembledistil --index_location ./indices/ohsumed_train_non_sensitive --index_name ohsumed_train_non_sensitive
+
+python splade_index_dataset.py --dataset ohsumed_train_sensitive --model_path naver/splade-cocondenser-ensembledistil --index_location ./indices/ohsumed_train_sensitive --index_name ohsumed_train_sensitive
